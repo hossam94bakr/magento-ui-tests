@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-19T20:45:56.438Z",
+    "end": "2025-04-19T20:46:18.334Z",
+    "duration": 21896,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "bc9de9e5-a56c-4c9c-b5fb-f594519f2e49",
+      "title": "",
+      "fullFile": "cypress\\e2e\\addToWishlist.cy.js",
+      "file": "cypress\\e2e\\addToWishlist.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5ac303a3-ab76-4f77-b226-849ec87d82f8",
+          "title": "Test Case C: Add to Wishlist",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should add products to wishlist",
+              "fullTitle": "Test Case C: Add to Wishlist should add products to wishlist",
+              "timedOut": null,
+              "duration": 21828,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_LoginPage.default.navigate();\n_LoginPage.default.login('hossam@example.com', 'Test@1234');\ncy.visit('/');\n// Add the first product to the wishlist\n_ProductPage.default.searchProduct('Radiant Tee');\n_WishlistPage.default.addProductToWishlistFromList('Radiant Tee', 'M', 'Blue');\n// Verify the first product in the wishlist\n_WishlistPage.default.verifyProductInWishlist('Radiant Tee');\n// Add the second product to the wishlist\n_ProductPage.default.searchProduct('Breathe-Easy Tank');\n_WishlistPage.default.addProductToWishlistFromList('Breathe-Easy Tank', 'L', 'White');\n// Verify the second product in the wishlist\n_WishlistPage.default.verifyProductInWishlist('Breathe-Easy Tank');",
+              "err": {},
+              "uuid": "85bc8fce-e5d7-4612-b6d5-e4eaf6df8a6c",
+              "parentUUID": "5ac303a3-ab76-4f77-b226-849ec87d82f8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "85bc8fce-e5d7-4612-b6d5-e4eaf6df8a6c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21828,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "test-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

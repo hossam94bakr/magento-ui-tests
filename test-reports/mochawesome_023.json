@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-19T20:48:09.238Z",
+    "end": "2025-04-19T20:48:23.726Z",
+    "duration": 14488,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a2e6ccdc-4f60-4957-92ad-7b36754369f3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\placeOrder.cy.js",
+      "file": "cypress\\e2e\\placeOrder.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3b058769-eedd-465a-9cd2-7c9c94c47ce7",
+          "title": "Test Case B: Place Order with Multiple Products and Validate Price",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should add both products to cart from listing page",
+              "fullTitle": "Test Case B: Place Order with Multiple Products and Validate Price should add both products to cart from listing page",
+              "timedOut": null,
+              "duration": 14432,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/');\nproducts.forEach(product => {\n  _ProductPage.default.searchProduct(product.name);\n  _ProductPage.default.addProductToCartFromList(product.name, product.size, product.color);\n  _ProductPage.default.verifyAddToCartMessage(product.name);\n});",
+              "err": {},
+              "uuid": "cfc833e6-2c40-48d5-8096-c4a119c1dffa",
+              "parentUUID": "3b058769-eedd-465a-9cd2-7c9c94c47ce7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cfc833e6-2c40-48d5-8096-c4a119c1dffa"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14432,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "test-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

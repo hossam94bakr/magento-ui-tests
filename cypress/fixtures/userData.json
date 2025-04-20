@@ -1,0 +1,15 @@
+{
+  "email": "hossam@example.com",
+  "password": "Test@1234",
+  "checkout": {
+    "email": "hossam@example.com",
+    "firstName": "Hossam",
+    "lastName": "Bakr",
+    "street": "123 Test Street",
+    "city": "Dubai",
+    "region": "Dubai",
+    "postcode": "00000",
+    "phone": "0501234567",
+    "country": "United Arab Emirates"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-04-19T17:09:47.628Z",
+    "end": "2025-04-19T17:09:57.540Z",
+    "duration": 9912,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "71672ed8-417b-4568-b83e-c8cc87125d37",
+      "title": "",
+      "fullFile": "cypress\\e2e\\searchValidation.cy.js",
+      "file": "cypress\\e2e\\searchValidation.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "509cf3aa-7056-4621-a5cb-bd0fb18365e5",
+          "title": "Test Case D: Search Validation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should search for a product and validate the results",
+              "fullTitle": "Test Case D: Search Validation should search for a product and validate the results",
+              "timedOut": null,
+              "duration": 9817,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const searchTerm = 'Radiant Tee';\n// Step 1: search for a product\ncy.visit('/');\n_SearchPage.default.searchForProduct(searchTerm);\n// Step 2: Validate that the search results contain the search term\n_SearchPage.default.verifySearchResults(searchTerm);",
+              "err": {},
+              "uuid": "e79737fb-a1f2-4ae4-92d3-4772058aac62",
+              "parentUUID": "509cf3aa-7056-4621-a5cb-bd0fb18365e5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e79737fb-a1f2-4ae4-92d3-4772058aac62"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9817,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "test-reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
